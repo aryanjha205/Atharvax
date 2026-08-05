@@ -3,22 +3,30 @@
 :root {
   /* Core Colors */
   --color-primary: #50C878; /* Parrot Green */
-  --color-primary-dark: #3eb565;
-  --color-primary-light: #6de596;
-  --color-primary-alpha: rgba(80, 200, 120, 0.15);
+  --color-primary-dark: #2ba755;
+  --color-primary-light: #72e096;
+  --color-primary-alpha: rgba(80, 200, 120, 0.12);
   
-  --color-bg: #ffffff;
-  --color-bg-alt: #f8fafc; /* Very light gray for sections */
+  --color-secondary: #00F0FF; /* Electric Teal for gradients */
+  --color-secondary-dark: #00B4D8;
+  --color-secondary-alpha: rgba(0, 240, 255, 0.1);
   
-  --color-text: #0f172a; /* Slate 900 for high contrast readability */
-  --color-text-muted: #64748b; /* Slate 500 for secondary text */
-  --color-text-light: #94a3b8;
+  --color-accent: #8A2BE2; /* Indigo/Violet accent */
+  --color-accent-light: #A052FF;
+  
+  --color-bg: #0b0f19; /* High-end dark theme default */
+  --color-bg-alt: #111827; /* Darker slate for sections */
+  --color-bg-card: #1f2937;
+  
+  --color-text: #f3f4f6; /* Premium light grey text on dark background */
+  --color-text-muted: #9ca3af; 
+  --color-text-light: #6b7280;
   
   /* Borders and Glass */
-  --color-border: #e2e8f0;
-  --glass-bg: rgba(255, 255, 255, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.5);
-  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+  --color-border: rgba(255, 255, 255, 0.08);
+  --glass-bg: rgba(17, 24, 39, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.06);
+  --glass-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.4);
   
   /* Typography */
   --font-heading: 'Outfit', sans-serif;
@@ -30,35 +38,42 @@
   --space-md: 1rem;
   --space-lg: 1.5rem;
   --space-xl: 2rem;
-  --space-2xl: 3rem;
-  --space-3xl: 5rem;
+  --space-2xl: 3.5rem;
+  --space-3xl: 6rem;
   
   /* Border Radius */
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 20px;
-  --radius-xl: 30px;
+  --radius-xl: 32px;
   --radius-full: 9999px;
   
   /* Transitions */
-  --transition-fast: 0.2s ease;
-  --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   
   /* Shadows */
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --shadow-green: 0 10px 25px -5px rgba(80, 200, 120, 0.4);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.4);
+  --shadow-green: 0 0 30px rgba(80, 200, 120, 0.25);
+  --shadow-glow: 0 0 40px rgba(0, 240, 255, 0.15);
 }
 
-/* Dark Mode Overrides (Optional / Future Support) */
-[data-theme="dark"] {
-  --color-bg: #0f172a;
-  --color-bg-alt: #1e293b;
-  --color-text: #f8fafc;
-  --color-text-muted: #94a3b8;
-  --color-border: #334155;
-  --glass-bg: rgba(15, 23, 42, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.1);
-  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+/* Light Theme Overrides */
+[data-theme="light"] {
+  --color-bg: #ffffff;
+  --color-bg-alt: #f8fafc;
+  --color-bg-card: #f1f5f9;
+  --color-text: #0f172a;
+  --color-text-muted: #475569;
+  --color-text-light: #94a3b8;
+  --color-border: rgba(15, 23, 42, 0.08);
+  --glass-bg: rgba(255, 255, 255, 0.75);
+  --glass-border: rgba(15, 23, 42, 0.06);
+  --glass-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.08);
 }
+

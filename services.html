@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services | Atharvax</title>
-    <meta name="description" content="Atharvax is a leading technology company specializing in AI, SaaS Products, Web Development, and Enterprise Software solutions.">
+    <meta name="description" content="Explore the full engineering service suites of Atharvax: machine learning, serverless SaaS pipelines, and dynamic cross-platform applications.">
     <meta name="theme-color" content="#50C878">
     <link rel="stylesheet" href="/css/variables.css">
     <link rel="stylesheet" href="/css/main.css">
@@ -13,7 +13,7 @@
 <body>
     <div class="main-wrapper">
         <!-- Navigation -->
-        <nav class="navbar glass" id="navbar">
+        <nav class="navbar scrolled" id="navbar">
             <div class="container nav-container">
                 <a href="/" class="logo">
                     Atharvax<span class="logo-dot">.</span>
@@ -24,6 +24,8 @@
                     <li><a href="/portfolio" class="nav-item">Portfolio</a></li>
                     <li><a href="/products" class="nav-item">SaaS Products</a></li>
                     <li><a href="/about" class="nav-item">About</a></li>
+                    <li><a href="/careers" class="nav-item">Careers</a></li>
+                    <li><a href="/blog" class="nav-item">Blog</a></li>
                     <li><a href="/contact" class="btn btn-primary">Let's Talk</a></li>
                 </ul>
             </div>
@@ -32,51 +34,123 @@
         <!-- Main Content -->
         <main class="main-content">
             <!-- Hero Section -->
-            <section class="section">
+            <section class="section" style="padding-top: 5rem;">
                 <div class="container text-center animate-fade-in">
-                    <h1 style="font-size: 3.5rem; margin-bottom: 1.5rem;">Services</h1>
-                    <p style="font-size: 1.2rem; color: var(--color-text-muted); max-width: 600px; margin: 0 auto 2rem;">Explore our comprehensive enterprise tech solutions.</p>
-                    <div style="display: flex; gap: 1rem; justify-content: center;">
-                        <a href="/services" class="btn btn-primary">Explore Services</a>
-                        <a href="/portfolio" class="btn btn-outline">View Portfolio</a>
+                    <span class="badge badge-primary">Our Offerings</span>
+                    <h1 style="font-size: 3.5rem; font-weight: 800; letter-spacing: -1px; margin-bottom: 1.5rem;">
+                        Core Technology <br>
+                        <span class="text-gradient">Services & Architecture</span>
+                    </h1>
+                    <p style="font-size: 1.2rem; color: var(--color-text-muted); max-width: 600px; margin: 0 auto 2rem; line-height: 1.7;">
+                        We architect high-performance infrastructures to run your AI models, databases, mobile features, and client interfaces at global scale.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Detailed Offerings Grid -->
+            <section class="section bg-alt" style="border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+                <div class="container">
+                    <div class="grid-2">
+                        <!-- AI -->
+                        <div class="glass-card" style="padding: var(--space-2xl);">
+                            <div style="width: 50px; height: 50px; background: var(--color-primary-alpha); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; color: var(--color-primary);">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                            </div>
+                            <h3 style="font-size: 1.6rem; margin-bottom: 1rem;">Artificial Intelligence & Neural Nets</h3>
+                            <p style="color: var(--color-text-muted); margin-bottom: 1.5rem; line-height: 1.7;">
+                                Train private large language models, integrate vector indexes (Pinecone, pgvector), engineer agentic task graphs, and build custom predictive analysis software.
+                            </p>
+                            <ul style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.95rem; color: var(--color-text); margin-bottom: 2rem;">
+                                <li>✓ Private LLM Finetuning & Quantization</li>
+                                <li>✓ RAG Architecture & Vector Pipelines</li>
+                                <li>✓ GPU-Inference Optimization Layers</li>
+                            </ul>
+                            <a href="/services/ai" class="btn btn-primary">Analyze AI Systems</a>
+                        </div>
+
+                        <!-- SaaS -->
+                        <div class="glass-card" style="padding: var(--space-2xl);">
+                            <div style="width: 50px; height: 50px; background: var(--color-secondary-alpha); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; color: var(--color-secondary);">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
+                            </div>
+                            <h3 style="font-size: 1.6rem; margin-bottom: 1rem;">Scalable SaaS & APIs</h3>
+                            <p style="color: var(--color-text-muted); margin-bottom: 1.5rem; line-height: 1.7;">
+                                Ship robust tenant routing layers, multi-region database replication, secure billing integrations (Stripe, Chargebee), JWT authentication graphs, and rate-limit controls.
+                            </p>
+                            <ul style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.95rem; color: var(--color-text); margin-bottom: 2rem;">
+                                <li>✓ Tenant Separation & Database Isolation</li>
+                                <li>✓ Stripe Metered Billing Configurations</li>
+                                <li>✓ Low-latency API gateways & caching</li>
+                            </ul>
+                            <a href="/services/saas" class="btn btn-primary">Analyze SaaS Offerings</a>
+                        </div>
+
+                        <!-- Web -->
+                        <div class="glass-card" style="padding: var(--space-2xl);">
+                            <div style="width: 50px; height: 50px; background: rgba(138, 43, 226, 0.12); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; color: var(--color-accent-light);">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v8M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                            </div>
+                            <h3 style="font-size: 1.6rem; margin-bottom: 1rem;">Enterprise Web Applications</h3>
+                            <p style="color: var(--color-text-muted); margin-bottom: 1.5rem; line-height: 1.7;">
+                                Deliver modular web systems using Next.js, React, or solid vanilla code. Built for complex data inputs, real-time metrics dashboards, and responsive accessibility parameters.
+                            </p>
+                            <ul style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.95rem; color: var(--color-text); margin-bottom: 2rem;">
+                                <li>✓ High-fidelity React & Next.js frameworks</li>
+                                <li>✓ Real-time WebSocket Dashboard telemetry</li>
+                                <li>✓ Modern UI styling & micro-animations</li>
+                            </ul>
+                            <a href="/services/web" class="btn btn-primary">Analyze Web Systems</a>
+                        </div>
+
+                        <!-- Mobile -->
+                        <div class="glass-card" style="padding: var(--space-2xl);">
+                            <div style="width: 50px; height: 50px; background: var(--color-primary-alpha); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; color: var(--color-primary);">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+                            </div>
+                            <h3 style="font-size: 1.6rem; margin-bottom: 1rem;">Native Mobile Interfaces</h3>
+                            <p style="color: var(--color-text-muted); margin-bottom: 1.5rem; line-height: 1.7;">
+                                Build native Android apps (Kotlin/Java) or cross-platform designs (Flutter, React Native) that compile into fluid interfaces under heavy user device limitations.
+                            </p>
+                            <ul style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.95rem; color: var(--color-text); margin-bottom: 2rem;">
+                                <li>✓ Native Android Jetpack Compose Dev</li>
+                                <li>✓ Hybrid Flutter & React Native setups</li>
+                                <li>✓ Offline Database sync (Room, Realm)</li>
+                            </ul>
+                            <a href="/services/mobile" class="btn btn-primary">Analyze Mobile Systems</a>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Features Section -->
-            <section class="section bg-alt">
+            <!-- Production Pipeline Process -->
+            <section class="section">
                 <div class="container">
-                    <div class="text-center" style="margin-bottom: 3rem;">
-                        <h2 style="font-size: 2.5rem;">Our Core Expertise</h2>
-                        <p style="color: var(--color-text-muted);">End-to-end technology solutions tailored for forward-thinking enterprises.</p>
+                    <div class="text-center" style="margin-bottom: 4rem;">
+                        <span class="badge badge-secondary">How We Ship Code</span>
+                        <h2 style="font-size: 2.5rem; letter-spacing: -1px;">The Delivery Roadmap</h2>
+                        <p style="color: var(--color-text-muted);">From architectural blueprints to high-volume production release.</p>
                     </div>
-                    
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-                        <!-- AI Card -->
-                        <div class="glass-card">
-                            <div style="width: 50px; height: 50px; background: var(--color-primary-alpha); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; color: var(--color-primary);">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-                            </div>
-                            <h3>AI Solutions</h3>
-                            <p style="color: var(--color-text-muted);">Custom LLMs, Machine Learning pipelines, and intelligent automation systems to 10x your business efficiency.</p>
-                        </div>
 
-                        <!-- SaaS Card -->
-                        <div class="glass-card">
-                            <div style="width: 50px; height: 50px; background: var(--color-primary-alpha); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; color: var(--color-primary);">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
-                            </div>
-                            <h3>SaaS Products</h3>
-                            <p style="color: var(--color-text-muted);">Scalable, secure, and intuitive cloud-based software architectures built for millions of users.</p>
+                    <div class="grid-4 text-center">
+                        <div class="glass-card" style="padding: var(--space-xl);">
+                            <h4 style="font-size: 1.8rem; margin-bottom: 0.5rem;" class="text-gradient">01</h4>
+                            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Discovery</h3>
+                            <p style="font-size: 0.85rem; color: var(--color-text-muted);">We map data structures, request loads, and write formal design documents before code.</p>
                         </div>
-
-                        <!-- Mobile Card -->
-                        <div class="glass-card">
-                            <div style="width: 50px; height: 50px; background: var(--color-primary-alpha); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; color: var(--color-primary);">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
-                            </div>
-                            <h3>Android Apps</h3>
-                            <p style="color: var(--color-text-muted);">Premium native and cross-platform mobile applications delivering flawless user experiences.</p>
+                        <div class="glass-card" style="padding: var(--space-xl);">
+                            <h4 style="font-size: 1.8rem; margin-bottom: 0.5rem;" class="text-gradient-purple">02</h4>
+                            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Blueprint</h3>
+                            <p style="font-size: 0.85rem; color: var(--color-text-muted);">We define schema targets, database indices, OAuth structures, and API endpoints.</p>
+                        </div>
+                        <div class="glass-card" style="padding: var(--space-xl);">
+                            <h4 style="font-size: 1.8rem; margin-bottom: 0.5rem;" class="text-gradient">03</h4>
+                            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Develop</h3>
+                            <p style="font-size: 0.85rem; color: var(--color-text-muted);">Our core in-house engineers build features, write unit tests, and integrate pipelines.</p>
+                        </div>
+                        <div class="glass-card" style="padding: var(--space-xl);">
+                            <h4 style="font-size: 1.8rem; margin-bottom: 0.5rem;" class="text-gradient-purple">04</h4>
+                            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Deploy</h3>
+                            <p style="font-size: 0.85rem; color: var(--color-text-muted);">Auto-build on merge, configure CDNs, and set up real-time analytics monitoring dashboards.</p>
                         </div>
                     </div>
                 </div>
@@ -84,34 +158,53 @@
         </main>
 
         <!-- Footer -->
-        <footer style="background: var(--color-bg); padding: 4rem 0 2rem; border-top: 1px solid var(--color-border);">
+        <footer style="background: var(--color-bg-alt); padding: 5rem 0 2.5rem; border-top: 1px solid var(--color-border);">
             <div class="container">
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
-                    <div>
-                        <a href="/" class="logo" style="margin-bottom: 1rem;">Atharvax<span class="logo-dot">.</span></a>
-                        <p style="color: var(--color-text-muted); font-size: 0.9rem;">Building the future of software, today.</p>
+                <div style="display: grid; grid-template-columns: 2fr repeat(3, 1fr); gap: 4rem; margin-bottom: 4rem;">
+                    <div style="max-width: 320px;">
+                        <a href="/" class="logo" style="margin-bottom: 1.5rem;">Atharvax<span class="logo-dot">.</span></a>
+                        <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">
+                            High-fidelity enterprise engineering, artificial intelligence design, and scalable cloud solutions built to perform.
+                        </p>
+                        <span style="font-size: 0.85rem; color: var(--color-text-light);">ISO 27001 Certified Security Practices.</span>
                     </div>
                     <div>
-                        <h4 style="margin-bottom: 1rem;">Solutions</h4>
-                        <ul style="display: flex; flex-direction: column; gap: 0.5rem; color: var(--color-text-muted); font-size: 0.9rem;">
-                            <li><a href="/services/ai">Artificial Intelligence</a></li>
-                            <li><a href="/services/saas">SaaS Development</a></li>
-                            <li><a href="/services/web">Web Applications</a></li>
-                            <li><a href="/services/mobile">Mobile Apps</a></li>
+                        <h4 style="margin-bottom: 1.5rem; font-size: 1.1rem;">Expertise</h4>
+                        <ul style="display: flex; flex-direction: column; gap: 0.8rem; color: var(--color-text-muted); font-size: 0.95rem;">
+                            <li><a href="/services/ai" class="nav-item">Artificial Intelligence</a></li>
+                            <li><a href="/services/saas" class="nav-item">SaaS Architectures</a></li>
+                            <li><a href="/services/web" class="nav-item">Custom Web Systems</a></li>
+                            <li><a href="/services/mobile" class="nav-item">Native Mobile Apps</a></li>
                         </ul>
                     </div>
                     <div>
-                        <h4 style="margin-bottom: 1rem;">Company</h4>
-                        <ul style="display: flex; flex-direction: column; gap: 0.5rem; color: var(--color-text-muted); font-size: 0.9rem;">
-                            <li><a href="/about">About Us</a></li>
-                            <li><a href="/careers">Careers</a></li>
-                            <li><a href="/blog">Blog</a></li>
-                            <li><a href="/contact">Contact</a></li>
+                        <h4 style="margin-bottom: 1.5rem; font-size: 1.1rem;">Company</h4>
+                        <ul style="display: flex; flex-direction: column; gap: 0.8rem; color: var(--color-text-muted); font-size: 0.95rem;">
+                            <li><a href="/about" class="nav-item">About Team</a></li>
+                            <li><a href="/careers" class="nav-item">Careers</a></li>
+                            <li><a href="/blog" class="nav-item">Tech Insights</a></li>
+                            <li><a href="/portfolio" class="nav-item">Case Studies</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 style="margin-bottom: 1.5rem; font-size: 1.1rem;">Contact</h4>
+                        <ul style="display: flex; flex-direction: column; gap: 0.8rem; color: var(--color-text-muted); font-size: 0.95rem;">
+                            <li><a href="/contact" class="nav-item">Schedule Consultation</a></li>
+                            <li><span style="color: var(--color-text-light);">partners@atharvax.com</span></li>
+                            <li><span style="color: var(--color-text-light);">+1 (800) 555-0199</span></li>
+                            <li><span style="color: var(--color-text-light);">San Francisco & Mumbai</span></li>
                         </ul>
                     </div>
                 </div>
-                <div style="text-align: center; color: var(--color-text-light); font-size: 0.85rem; border-top: 1px solid var(--color-border); padding-top: 2rem;">
-                    &copy; 2026 Atharvax. All rights reserved.
+                
+                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--color-border); padding-top: 2rem; color: var(--color-text-light); font-size: 0.85rem; flex-wrap: wrap; gap: var(--space-md);">
+                    <div>
+                        &copy; 2026 Atharvax. All rights reserved.
+                    </div>
+                    <div style="display: flex; gap: var(--space-lg);">
+                        <a href="/privacy" class="nav-item">Privacy Policy</a>
+                        <a href="/terms" class="nav-item">Terms of Infrastructure Use</a>
+                    </div>
                 </div>
             </div>
         </footer>

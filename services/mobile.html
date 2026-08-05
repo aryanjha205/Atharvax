@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile Apps | Atharvax</title>
-    <meta name="description" content="Atharvax is a leading technology company specializing in AI, SaaS Products, Web Development, and Enterprise Software solutions.">
+    <title>Mobile Applications | Atharvax</title>
+    <meta name="description" content="Native Android Kotlin composing, SQLite room cache pipelines, and React Native hybrid structures designed by Atharvax.">
     <meta name="theme-color" content="#50C878">
     <link rel="stylesheet" href="/css/variables.css">
     <link rel="stylesheet" href="/css/main.css">
@@ -13,17 +13,19 @@
 <body>
     <div class="main-wrapper">
         <!-- Navigation -->
-        <nav class="navbar glass" id="navbar">
+        <nav class="navbar scrolled" id="navbar">
             <div class="container nav-container">
                 <a href="/" class="logo">
                     Atharvax<span class="logo-dot">.</span>
                 </a>
                 <ul class="nav-links">
                     <li><a href="/" class="nav-item">Home</a></li>
-                    <li><a href="/services" class="nav-item">Services</a></li>
+                    <li><a href="/services" class="nav-item active">Services</a></li>
                     <li><a href="/portfolio" class="nav-item">Portfolio</a></li>
                     <li><a href="/products" class="nav-item">SaaS Products</a></li>
                     <li><a href="/about" class="nav-item">About</a></li>
+                    <li><a href="/careers" class="nav-item">Careers</a></li>
+                    <li><a href="/blog" class="nav-item">Blog</a></li>
                     <li><a href="/contact" class="btn btn-primary">Let's Talk</a></li>
                 </ul>
             </div>
@@ -32,86 +34,113 @@
         <!-- Main Content -->
         <main class="main-content">
             <!-- Hero Section -->
-            <section class="section">
+            <section class="section" style="padding-top: 5rem;">
                 <div class="container text-center animate-fade-in">
-                    <h1 style="font-size: 3.5rem; margin-bottom: 1.5rem;">Mobile Apps</h1>
-                    <p style="font-size: 1.2rem; color: var(--color-text-muted); max-width: 600px; margin: 0 auto 2rem;">Premium native and cross-platform mobile apps.</p>
-                    <div style="display: flex; gap: 1rem; justify-content: center;">
-                        <a href="/services" class="btn btn-primary">Explore Services</a>
-                        <a href="/portfolio" class="btn btn-outline">View Portfolio</a>
+                    <span class="badge badge-primary">Handheld Systems</span>
+                    <h1 style="font-size: 3.5rem; font-weight: 800; letter-spacing: -1px; margin-bottom: 1.5rem;">
+                        Native & Hybrid <br>
+                        <span class="text-gradient">Mobile Development</span>
+                    </h1>
+                    <p style="font-size: 1.2rem; color: var(--color-text-muted); max-width: 600px; margin: 0 auto 2rem; line-height: 1.7;">
+                        Fluid user interfaces compile to native instructions for maximum battery efficiency and zero latency.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Tech Details Section -->
+            <section class="section bg-alt" style="border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+                <div class="container">
+                    <div class="grid-2" style="align-items: center;">
+                        <div>
+                            <h2 style="font-size: 2.2rem; margin-bottom: 1.2rem; letter-spacing: -1px;">Native Android Compose</h2>
+                            <p style="color: var(--color-text-muted); margin-bottom: 1.2rem; line-height: 1.7;">
+                                We develop premium Android experiences using modern Kotlin Jetpack Compose frameworks. We design custom canvas animations, layout grids, and deep multi-threaded performance routines.
+                            </p>
+                            <p style="color: var(--color-text-muted); margin-bottom: 1.5rem; line-height: 1.7;">
+                                Using coroutines and isolated database channels, our apps execute intensive calculations off the main UI thread to prevent device hangs or UI frame skips.
+                            </p>
+                            <div class="tech-chips">
+                                <span class="tech-chip">Android SDK</span>
+                                <span class="tech-chip">Kotlin Jetpack</span>
+                                <span class="tech-chip">Coroutines</span>
+                                <span class="tech-chip">NFC / BLE APIs</span>
+                            </div>
+                        </div>
+                        <div style="background: rgba(0,0,0,0.2); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-xl);">
+                            <h3 style="margin-bottom: 1rem;" class="text-gradient">Offline SQLite sync Caching</h3>
+                            <p style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">
+                                We build native caching layers using Room databases or Realm stores. Applications store user states, queues, and drafts locally, synchronizing automatically with cloud clusters when network access returns.
+                            </p>
+                            <ul style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.9rem; color: var(--color-text-muted);">
+                                <li>✓ SQLite local relational database synchronization</li>
+                                <li>✓ Network status listeners & job queuing</li>
+                                <li>✓ Custom merge resolution logic</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Features Section -->
-            <section class="section bg-alt">
+            <!-- Bottom Call to action -->
+            <section class="section text-center">
                 <div class="container">
-                    <div class="text-center" style="margin-bottom: 3rem;">
-                        <h2 style="font-size: 2.5rem;">Our Core Expertise</h2>
-                        <p style="color: var(--color-text-muted);">End-to-end technology solutions tailored for forward-thinking enterprises.</p>
-                    </div>
-                    
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-                        <!-- AI Card -->
-                        <div class="glass-card">
-                            <div style="width: 50px; height: 50px; background: var(--color-primary-alpha); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; color: var(--color-primary);">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-                            </div>
-                            <h3>AI Solutions</h3>
-                            <p style="color: var(--color-text-muted);">Custom LLMs, Machine Learning pipelines, and intelligent automation systems to 10x your business efficiency.</p>
-                        </div>
-
-                        <!-- SaaS Card -->
-                        <div class="glass-card">
-                            <div style="width: 50px; height: 50px; background: var(--color-primary-alpha); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; color: var(--color-primary);">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
-                            </div>
-                            <h3>SaaS Products</h3>
-                            <p style="color: var(--color-text-muted);">Scalable, secure, and intuitive cloud-based software architectures built for millions of users.</p>
-                        </div>
-
-                        <!-- Mobile Card -->
-                        <div class="glass-card">
-                            <div style="width: 50px; height: 50px; background: var(--color-primary-alpha); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; color: var(--color-primary);">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
-                            </div>
-                            <h3>Android Apps</h3>
-                            <p style="color: var(--color-text-muted);">Premium native and cross-platform mobile applications delivering flawless user experiences.</p>
-                        </div>
-                    </div>
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1rem; letter-spacing: -1px;">Need a Premium Mobile Application?</h2>
+                    <p style="color: var(--color-text-muted); max-width: 500px; margin: 0 auto 2rem;">
+                        Reach out to our mobile engineering team to schedule a custom app design session.
+                    </p>
+                    <a href="/contact" class="btn btn-primary">Schedule Mobile Consult</a>
                 </div>
             </section>
         </main>
 
         <!-- Footer -->
-        <footer style="background: var(--color-bg); padding: 4rem 0 2rem; border-top: 1px solid var(--color-border);">
+        <footer style="background: var(--color-bg-alt); padding: 5rem 0 2.5rem; border-top: 1px solid var(--color-border);">
             <div class="container">
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
-                    <div>
-                        <a href="/" class="logo" style="margin-bottom: 1rem;">Atharvax<span class="logo-dot">.</span></a>
-                        <p style="color: var(--color-text-muted); font-size: 0.9rem;">Building the future of software, today.</p>
+                <div style="display: grid; grid-template-columns: 2fr repeat(3, 1fr); gap: 4rem; margin-bottom: 4rem;">
+                    <div style="max-width: 320px;">
+                        <a href="/" class="logo" style="margin-bottom: 1.5rem;">Atharvax<span class="logo-dot">.</span></a>
+                        <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">
+                            High-fidelity enterprise engineering, artificial intelligence design, and scalable cloud solutions built to perform.
+                        </p>
+                        <span style="font-size: 0.85rem; color: var(--color-text-light);">ISO 27001 Certified Security Practices.</span>
                     </div>
                     <div>
-                        <h4 style="margin-bottom: 1rem;">Solutions</h4>
-                        <ul style="display: flex; flex-direction: column; gap: 0.5rem; color: var(--color-text-muted); font-size: 0.9rem;">
-                            <li><a href="/services/ai">Artificial Intelligence</a></li>
-                            <li><a href="/services/saas">SaaS Development</a></li>
-                            <li><a href="/services/web">Web Applications</a></li>
-                            <li><a href="/services/mobile">Mobile Apps</a></li>
+                        <h4 style="margin-bottom: 1.5rem; font-size: 1.1rem;">Expertise</h4>
+                        <ul style="display: flex; flex-direction: column; gap: 0.8rem; color: var(--color-text-muted); font-size: 0.95rem;">
+                            <li><a href="/services/ai" class="nav-item">Artificial Intelligence</a></li>
+                            <li><a href="/services/saas" class="nav-item">SaaS Architectures</a></li>
+                            <li><a href="/services/web" class="nav-item">Custom Web Systems</a></li>
+                            <li><a href="/services/mobile" class="nav-item">Native Mobile Apps</a></li>
                         </ul>
                     </div>
                     <div>
-                        <h4 style="margin-bottom: 1rem;">Company</h4>
-                        <ul style="display: flex; flex-direction: column; gap: 0.5rem; color: var(--color-text-muted); font-size: 0.9rem;">
-                            <li><a href="/about">About Us</a></li>
-                            <li><a href="/careers">Careers</a></li>
-                            <li><a href="/blog">Blog</a></li>
-                            <li><a href="/contact">Contact</a></li>
+                        <h4 style="margin-bottom: 1.5rem; font-size: 1.1rem;">Company</h4>
+                        <ul style="display: flex; flex-direction: column; gap: 0.8rem; color: var(--color-text-muted); font-size: 0.95rem;">
+                            <li><a href="/about" class="nav-item">About Team</a></li>
+                            <li><a href="/careers" class="nav-item">Careers</a></li>
+                            <li><a href="/blog" class="nav-item">Tech Insights</a></li>
+                            <li><a href="/portfolio" class="nav-item">Case Studies</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 style="margin-bottom: 1.5rem; font-size: 1.1rem;">Contact</h4>
+                        <ul style="display: flex; flex-direction: column; gap: 0.8rem; color: var(--color-text-muted); font-size: 0.95rem;">
+                            <li><a href="/contact" class="nav-item">Schedule Consultation</a></li>
+                            <li><span style="color: var(--color-text-light);">partners@atharvax.com</span></li>
+                            <li><span style="color: var(--color-text-light);">+1 (800) 555-0199</span></li>
+                            <li><span style="color: var(--color-text-light);">San Francisco & Mumbai</span></li>
                         </ul>
                     </div>
                 </div>
-                <div style="text-align: center; color: var(--color-text-light); font-size: 0.85rem; border-top: 1px solid var(--color-border); padding-top: 2rem;">
-                    &copy; 2026 Atharvax. All rights reserved.
+                
+                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--color-border); padding-top: 2rem; color: var(--color-text-light); font-size: 0.85rem; flex-wrap: wrap; gap: var(--space-md);">
+                    <div>
+                        &copy; 2026 Atharvax. All rights reserved.
+                    </div>
+                    <div style="display: flex; gap: var(--space-lg);">
+                        <a href="/privacy" class="nav-item">Privacy Policy</a>
+                        <a href="/terms" class="nav-item">Terms of Infrastructure Use</a>
+                    </div>
                 </div>
             </div>
         </footer>

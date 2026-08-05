@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | Atharvax</title>
-    <meta name="description" content="Atharvax is a leading technology company specializing in AI, SaaS Products, Web Development, and Enterprise Software solutions.">
+    <meta name="description" content="Meet the specialized engineers, AI developers, and architects behind Atharvax. Learn about our tech values and milestones.">
     <meta name="theme-color" content="#50C878">
     <link rel="stylesheet" href="/css/variables.css">
     <link rel="stylesheet" href="/css/main.css">
@@ -13,7 +13,7 @@
 <body>
     <div class="main-wrapper">
         <!-- Navigation -->
-        <nav class="navbar glass" id="navbar">
+        <nav class="navbar scrolled" id="navbar">
             <div class="container nav-container">
                 <a href="/" class="logo">
                     Atharvax<span class="logo-dot">.</span>
@@ -24,6 +24,8 @@
                     <li><a href="/portfolio" class="nav-item">Portfolio</a></li>
                     <li><a href="/products" class="nav-item">SaaS Products</a></li>
                     <li><a href="/about" class="nav-item active">About</a></li>
+                    <li><a href="/careers" class="nav-item">Careers</a></li>
+                    <li><a href="/blog" class="nav-item">Blog</a></li>
                     <li><a href="/contact" class="btn btn-primary">Let's Talk</a></li>
                 </ul>
             </div>
@@ -32,51 +34,149 @@
         <!-- Main Content -->
         <main class="main-content">
             <!-- Hero Section -->
-            <section class="section">
+            <section class="section" style="padding-top: 5rem;">
                 <div class="container text-center animate-fade-in">
-                    <h1 style="font-size: 3.5rem; margin-bottom: 1.5rem;">About Us</h1>
-                    <p style="font-size: 1.2rem; color: var(--color-text-muted); max-width: 600px; margin: 0 auto 2rem;">Learn more about the team behind Atharvax.</p>
-                    <div style="display: flex; gap: 1rem; justify-content: center;">
-                        <a href="/services" class="btn btn-primary">Explore Services</a>
-                        <a href="/portfolio" class="btn btn-outline">View Portfolio</a>
+                    <span class="badge badge-primary">Our Mission</span>
+                    <h1 style="font-size: 3.5rem; font-weight: 800; letter-spacing: -1px; margin-bottom: 1.5rem;">
+                        Scale. Security. <br>
+                        <span class="text-gradient">Architectural Excellence.</span>
+                    </h1>
+                    <p style="font-size: 1.2rem; color: var(--color-text-muted); max-width: 600px; margin: 0 auto 2rem; line-height: 1.7;">
+                        Atharvax was founded with a singular directive: to replace brittle legacy software with highly optimized, automated, and secure digital engines.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Company Narrative -->
+            <section class="section bg-alt" style="border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+                <div class="container">
+                    <div class="grid-2" style="align-items: center;">
+                        <div>
+                            <h2 style="font-size: 2.3rem; margin-bottom: 1.5rem; letter-spacing: -1px;">The Engineer's Agency</h2>
+                            <p style="color: var(--color-text-muted); margin-bottom: 1.2rem; line-height: 1.7;">
+                                Unlike agencies that deploy templated websites, Atharvax specializes in deep tech. Our engineers come from backgrounds in high-frequency trading platforms, massive cloud scale architectures, and machine learning research centers.
+                            </p>
+                            <p style="color: var(--color-text-muted); margin-bottom: 1.5rem; line-height: 1.7;">
+                                Whether it's training private LLMs on proprietary data or building cross-platform native interfaces that feel instant, we focus on engineering metrics first. We deliver systems that compile, scale, and save compute costs.
+                            </p>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                                <div style="border-left: 3px solid var(--color-primary); padding-left: 1rem;">
+                                    <h4 style="font-size: 1.5rem;" class="text-gradient">100%</h4>
+                                    <span style="font-size: 0.85rem; color: var(--color-text-muted);">In-house Technical Talent</span>
+                                </div>
+                                <div style="border-left: 3px solid var(--color-secondary); padding-left: 1rem;">
+                                    <h4 style="font-size: 1.5rem;" class="text-gradient">Zero</h4>
+                                    <span style="font-size: 0.85rem; color: var(--color-text-muted);">Outsourced Dependencies</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-xl); box-shadow: var(--shadow-md);">
+                            <h3 style="margin-bottom: 1.5rem;" class="text-gradient">Our Core Pillars</h3>
+                            <ul style="display: flex; flex-direction: column; gap: var(--space-md);">
+                                <li>
+                                    <strong>🔒 Security First</strong>
+                                    <p style="font-size: 0.9rem; color: var(--color-text-muted);">We integrate OAuth2, granular IAM checks, and SQL-injection protections at the database schema layer.</p>
+                                </li>
+                                <li>
+                                    <strong>⚡ High Concurrency</strong>
+                                    <p style="font-size: 0.9rem; color: var(--color-text-muted);">Applications are performance tested to maintain low latency profiles under thousands of simultaneous requests.</p>
+                                </li>
+                                <li>
+                                    <strong>📈 Clean API Routing</strong>
+                                    <p style="font-size: 0.9rem; color: var(--color-text-muted);">Strict JSON schema specs, auto-generated openAPI models, and self-documenting parameters.</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Features Section -->
-            <section class="section bg-alt">
+            <!-- Milestones Timeline -->
+            <section class="section">
                 <div class="container">
-                    <div class="text-center" style="margin-bottom: 3rem;">
-                        <h2 style="font-size: 2.5rem;">Our Core Expertise</h2>
-                        <p style="color: var(--color-text-muted);">End-to-end technology solutions tailored for forward-thinking enterprises.</p>
+                    <div class="text-center" style="margin-bottom: 4rem;">
+                        <span class="badge badge-secondary">Corporate Progress</span>
+                        <h2 style="font-size: 2.5rem; letter-spacing: -1px;">Our Chronology</h2>
+                        <p style="color: var(--color-text-muted);">Tracing the developmental curve of Atharvax.</p>
                     </div>
-                    
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-                        <!-- AI Card -->
-                        <div class="glass-card">
-                            <div style="width: 50px; height: 50px; background: var(--color-primary-alpha); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; color: var(--color-primary);">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+
+                    <div class="timeline">
+                        <div class="timeline-item left">
+                            <div class="timeline-content">
+                                <div class="timeline-date">2023</div>
+                                <h4 style="margin-bottom: 0.5rem;">The Genesis</h4>
+                                <p style="font-size: 0.9rem; color: var(--color-text-muted);">Atharvax founded by a group of former core developers with a vision to build highly scalable developer tooling.</p>
                             </div>
-                            <h3>AI Solutions</h3>
-                            <p style="color: var(--color-text-muted);">Custom LLMs, Machine Learning pipelines, and intelligent automation systems to 10x your business efficiency.</p>
+                        </div>
+                        <div class="timeline-item right">
+                            <div class="timeline-content">
+                                <div class="timeline-date">2024</div>
+                                <h4 style="margin-bottom: 0.5rem;">SaaS Expansion</h4>
+                                <p style="font-size: 0.9rem; color: var(--color-text-muted);">Successfully raised Seed financing. Launched two SaaS microservices processing over 50M API transactions monthly.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item left">
+                            <div class="timeline-content">
+                                <div class="timeline-date">2025</div>
+                                <h4 style="margin-bottom: 0.5rem;">Enterprise & AI Pivot</h4>
+                                <p style="font-size: 0.9rem; color: var(--color-text-muted);">Formed the AI custom modeling division. Delivered complex logistics modeling pipelines to global supply-chain enterprises.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item right">
+                            <div class="timeline-content">
+                                <div class="timeline-date">2026</div>
+                                <h4 style="margin-bottom: 0.5rem;">Global Reach</h4>
+                                <p style="font-size: 0.9rem; color: var(--color-text-muted);">Established permanent operations in San Francisco and Mumbai, expanding the team to 40 core full-time engineers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team Section -->
+            <section class="section bg-alt" style="border-top: 1px solid var(--color-border);">
+                <div class="container">
+                    <div class="text-center" style="margin-bottom: 4rem;">
+                        <span class="badge badge-primary">The Architects</span>
+                        <h2 style="font-size: 2.5rem; letter-spacing: -1px;">Leadership Team</h2>
+                        <p style="color: var(--color-text-muted);">Meet the principal partners directing our technical focus.</p>
+                    </div>
+
+                    <div class="grid-3">
+                        <!-- Founder 1 -->
+                        <div class="team-card glass-card">
+                            <div class="team-img-wrapper" style="background: linear-gradient(135deg, var(--color-primary-alpha), var(--color-secondary-alpha)); display: flex; align-items: center; justify-content: center; color: var(--color-primary); font-size: 3rem; font-weight: 800;">
+                                AK
+                            </div>
+                            <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">Aryan Kapoor</h3>
+                            <p style="font-size: 0.85rem; text-transform: uppercase; color: var(--color-primary); font-weight: 700; margin-bottom: 0.8rem; letter-spacing: 1px;">Chief Architect & Partner</p>
+                            <p style="font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.6;">
+                                Former systems design lead at scale. Aryan manages core compilers, AI networks, and backend schemas.
+                            </p>
                         </div>
 
-                        <!-- SaaS Card -->
-                        <div class="glass-card">
-                            <div style="width: 50px; height: 50px; background: var(--color-primary-alpha); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; color: var(--color-primary);">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
+                        <!-- Founder 2 -->
+                        <div class="team-card glass-card">
+                            <div class="team-img-wrapper" style="background: linear-gradient(135deg, var(--color-secondary-alpha), rgba(138, 43, 226, 0.12)); display: flex; align-items: center; justify-content: center; color: var(--color-secondary); font-size: 3rem; font-weight: 800;">
+                                SM
                             </div>
-                            <h3>SaaS Products</h3>
-                            <p style="color: var(--color-text-muted);">Scalable, secure, and intuitive cloud-based software architectures built for millions of users.</p>
+                            <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">Siddharth Mehta</h3>
+                            <p style="font-size: 0.85rem; text-transform: uppercase; color: var(--color-secondary); font-weight: 700; margin-bottom: 0.8rem; letter-spacing: 1px;">Principal Mobile Architect</p>
+                            <p style="font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.6;">
+                                Specialized in React Native thread management, native Android kernels, and device performance optimization.
+                            </p>
                         </div>
 
-                        <!-- Mobile Card -->
-                        <div class="glass-card">
-                            <div style="width: 50px; height: 50px; background: var(--color-primary-alpha); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; color: var(--color-primary);">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+                        <!-- Founder 3 -->
+                        <div class="team-card glass-card">
+                            <div class="team-img-wrapper" style="background: linear-gradient(135deg, rgba(138, 43, 226, 0.12), var(--color-primary-alpha)); display: flex; align-items: center; justify-content: center; color: var(--color-accent-light); font-size: 3rem; font-weight: 800;">
+                                NS
                             </div>
-                            <h3>Android Apps</h3>
-                            <p style="color: var(--color-text-muted);">Premium native and cross-platform mobile applications delivering flawless user experiences.</p>
+                            <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">Neha Sharma</h3>
+                            <p style="font-size: 0.85rem; text-transform: uppercase; color: var(--color-accent-light); font-weight: 700; margin-bottom: 0.8rem; letter-spacing: 1px;">Vp of Cloud Operations</p>
+                            <p style="font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.6;">
+                                Master of Kubernetes networks, Terraform scripts, serverless architectures, and CDN optimizations.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -84,34 +184,53 @@
         </main>
 
         <!-- Footer -->
-        <footer style="background: var(--color-bg); padding: 4rem 0 2rem; border-top: 1px solid var(--color-border);">
+        <footer style="background: var(--color-bg-alt); padding: 5rem 0 2.5rem; border-top: 1px solid var(--color-border);">
             <div class="container">
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
-                    <div>
-                        <a href="/" class="logo" style="margin-bottom: 1rem;">Atharvax<span class="logo-dot">.</span></a>
-                        <p style="color: var(--color-text-muted); font-size: 0.9rem;">Building the future of software, today.</p>
+                <div style="display: grid; grid-template-columns: 2fr repeat(3, 1fr); gap: 4rem; margin-bottom: 4rem;">
+                    <div style="max-width: 320px;">
+                        <a href="/" class="logo" style="margin-bottom: 1.5rem;">Atharvax<span class="logo-dot">.</span></a>
+                        <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">
+                            High-fidelity enterprise engineering, artificial intelligence design, and scalable cloud solutions built to perform.
+                        </p>
+                        <span style="font-size: 0.85rem; color: var(--color-text-light);">ISO 27001 Certified Security Practices.</span>
                     </div>
                     <div>
-                        <h4 style="margin-bottom: 1rem;">Solutions</h4>
-                        <ul style="display: flex; flex-direction: column; gap: 0.5rem; color: var(--color-text-muted); font-size: 0.9rem;">
-                            <li><a href="/services/ai">Artificial Intelligence</a></li>
-                            <li><a href="/services/saas">SaaS Development</a></li>
-                            <li><a href="/services/web">Web Applications</a></li>
-                            <li><a href="/services/mobile">Mobile Apps</a></li>
+                        <h4 style="margin-bottom: 1.5rem; font-size: 1.1rem;">Expertise</h4>
+                        <ul style="display: flex; flex-direction: column; gap: 0.8rem; color: var(--color-text-muted); font-size: 0.95rem;">
+                            <li><a href="/services/ai" class="nav-item">Artificial Intelligence</a></li>
+                            <li><a href="/services/saas" class="nav-item">SaaS Architectures</a></li>
+                            <li><a href="/services/web" class="nav-item">Custom Web Systems</a></li>
+                            <li><a href="/services/mobile" class="nav-item">Native Mobile Apps</a></li>
                         </ul>
                     </div>
                     <div>
-                        <h4 style="margin-bottom: 1rem;">Company</h4>
-                        <ul style="display: flex; flex-direction: column; gap: 0.5rem; color: var(--color-text-muted); font-size: 0.9rem;">
-                            <li><a href="/about">About Us</a></li>
-                            <li><a href="/careers">Careers</a></li>
-                            <li><a href="/blog">Blog</a></li>
-                            <li><a href="/contact">Contact</a></li>
+                        <h4 style="margin-bottom: 1.5rem; font-size: 1.1rem;">Company</h4>
+                        <ul style="display: flex; flex-direction: column; gap: 0.8rem; color: var(--color-text-muted); font-size: 0.95rem;">
+                            <li><a href="/about" class="nav-item">About Team</a></li>
+                            <li><a href="/careers" class="nav-item">Careers</a></li>
+                            <li><a href="/blog" class="nav-item">Tech Insights</a></li>
+                            <li><a href="/portfolio" class="nav-item">Case Studies</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 style="margin-bottom: 1.5rem; font-size: 1.1rem;">Contact</h4>
+                        <ul style="display: flex; flex-direction: column; gap: 0.8rem; color: var(--color-text-muted); font-size: 0.95rem;">
+                            <li><a href="/contact" class="nav-item">Schedule Consultation</a></li>
+                            <li><span style="color: var(--color-text-light);">partners@atharvax.com</span></li>
+                            <li><span style="color: var(--color-text-light);">+1 (800) 555-0199</span></li>
+                            <li><span style="color: var(--color-text-light);">San Francisco & Mumbai</span></li>
                         </ul>
                     </div>
                 </div>
-                <div style="text-align: center; color: var(--color-text-light); font-size: 0.85rem; border-top: 1px solid var(--color-border); padding-top: 2rem;">
-                    &copy; 2026 Atharvax. All rights reserved.
+                
+                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--color-border); padding-top: 2rem; color: var(--color-text-light); font-size: 0.85rem; flex-wrap: wrap; gap: var(--space-md);">
+                    <div>
+                        &copy; 2026 Atharvax. All rights reserved.
+                    </div>
+                    <div style="display: flex; gap: var(--space-lg);">
+                        <a href="/privacy" class="nav-item">Privacy Policy</a>
+                        <a href="/terms" class="nav-item">Terms of Infrastructure Use</a>
+                    </div>
                 </div>
             </div>
         </footer>
