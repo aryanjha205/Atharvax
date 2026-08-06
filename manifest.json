@@ -1,21 +1,63 @@
 {
-  "name": "Atharvax | Technology Company",
+  "name": "Atharvax | Premium AI & Enterprise Software Solutions",
   "short_name": "Atharvax",
-  "description": "Premium AI, SaaS, and Web Development Solutions",
-  "start_url": "/",
+  "description": "High-end software agency designing custom AI systems, enterprise SaaS infrastructures, and premium mobile applications.",
+  "id": "/?source=pwa",
+  "start_url": "/?source=pwa",
   "display": "standalone",
-  "background_color": "#ffffff",
+  "scope": "/",
+  "orientation": "portrait",
+  "background_color": "#0b0f19",
   "theme_color": "#50C878",
+  "categories": [
+    "business",
+    "productivity",
+    "utilities"
+  ],
   "icons": [
     {
       "src": "/assets/icon-192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "/assets/icon-512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icon-192-maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/assets/icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Explore Services",
+      "url": "/services?source=shortcut",
+      "description": "Custom AI, SaaS, Web, and Mobile solutions",
+      "icons": [{ "src": "/assets/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "View Portfolio",
+      "url": "/portfolio?source=shortcut",
+      "description": "Check our enterprise case studies",
+      "icons": [{ "src": "/assets/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Let's Talk",
+      "url": "/contact?source=shortcut",
+      "description": "Schedule an architecture consultation",
+      "icons": [{ "src": "/assets/icon-192.png", "sizes": "192x192" }]
     }
   ]
 }

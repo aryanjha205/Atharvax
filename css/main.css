@@ -18,6 +18,8 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   transition: background-color var(--transition-smooth), color var(--transition-smooth);
+  overscroll-behavior-y: contain; /* Prevents pull-to-refresh in PWA */
+  -webkit-tap-highlight-color: transparent; /* Clean tap colors on mobile */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -804,3 +806,267 @@ textarea.form-control {
 .animate-delay-1 { animation-delay: 0.15s; }
 .animate-delay-2 { animation-delay: 0.3s; }
 .animate-delay-3 { animation-delay: 0.45s; }
+
+/* ==========================================
+   Mobile-App (PWA) Styling Enhancements
+   ========================================== */
+
+/* Disable Text Selection on Interactive UI Elements */
+.btn, 
+.nav-item, 
+.mobile-bottom-nav-item, 
+.theme-toggle-btn, 
+.tab-btn {
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+/* Glassmorphic Bottom Navigation Bar */
+.mobile-bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: calc(60px + var(--safe-bottom));
+  padding-bottom: var(--safe-bottom);
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid var(--color-border);
+  box-shadow: 0 -5px 25px rgba(0, 0, 0, 0.4);
+  display: none; /* Hidden on desktop view */
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1500;
+  transition: background var(--transition-smooth);
+}
+
+.mobile-bottom-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: 100%;
+  color: var(--color-text-muted);
+  font-size: 0.65rem;
+  font-weight: 500;
+  text-align: center;
+  gap: 3px;
+  text-decoration: none;
+  transition: color var(--transition-fast), transform 0.15s ease;
+  position: relative;
+}
+
+.mobile-bottom-nav-item svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2px;
+  transition: transform var(--transition-fast), stroke-width var(--transition-fast);
+}
+
+.mobile-bottom-nav-item:active {
+  transform: scale(0.9);
+}
+
+.mobile-bottom-nav-item.active {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.mobile-bottom-nav-item.active svg {
+  transform: translateY(-2px);
+  stroke-width: 2.5px;
+  filter: drop-shadow(0 0 4px var(--color-primary-alpha));
+}
+
+/* PWA App Custom Install Banner */
+.pwa-install-banner {
+  position: fixed;
+  bottom: calc(76px + var(--safe-bottom));
+  left: var(--space-md);
+  right: var(--space-md);
+  background: var(--glass-bg);
+  border: 1px solid rgba(80, 200, 120, 0.3);
+  border-radius: var(--radius-md);
+  padding: 10px 14px;
+  box-shadow: var(--shadow-lg), var(--shadow-green);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  z-index: 1400;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  transform: translateY(180px);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
+}
+
+.pwa-install-banner.show {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.pwa-install-content {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.pwa-install-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid var(--color-border);
+}
+
+.pwa-install-text h4 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 1px;
+}
+
+.pwa-install-text p {
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+  line-height: 1.25;
+}
+
+.pwa-install-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.btn-install-confirm {
+  padding: 0.45rem 0.9rem;
+  font-size: 0.75rem;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.btn-install-close {
+  background: none;
+  border: none;
+  color: var(--color-text-light);
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--transition-fast);
+}
+
+.btn-install-close:hover {
+  color: var(--color-text);
+}
+
+.btn-install-close svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* iOS Share Instruction Tooltip */
+.ios-install-tooltip {
+  position: fixed;
+  bottom: calc(76px + var(--safe-bottom));
+  left: 50%;
+  transform: translateX(-50%) translateY(180px);
+  width: calc(100% - 32px);
+  max-width: 360px;
+  background: var(--glass-bg);
+  border: 1px solid var(--color-primary-alpha);
+  border-radius: var(--radius-md);
+  padding: 12px var(--space-md);
+  box-shadow: var(--shadow-lg), var(--shadow-green);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  z-index: 1400;
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
+}
+
+.ios-install-tooltip.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.ios-install-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 6px;
+  margin-bottom: 6px;
+}
+
+.ios-install-header h4 {
+  font-size: 0.85rem;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.ios-install-body {
+  font-size: 0.75rem;
+  color: var(--color-text);
+  line-height: 1.45;
+}
+
+.ios-install-body ol {
+  margin-left: 14px;
+  margin-top: 4px;
+}
+
+.ios-install-body li {
+  margin-bottom: 4px;
+}
+
+.ios-icon-inline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2px 5px;
+  border-radius: 4px;
+  margin: 0 2px;
+}
+
+/* Responsiveness adjustments for PWA bottom nav and safe areas */
+@media (max-width: 768px) {
+  .mobile-bottom-nav {
+    display: flex;
+  }
+  
+  body {
+    padding-bottom: calc(68px + var(--safe-bottom)) !important;
+  }
+
+  /* Make sure header doesn't get clipped by device safe area notch */
+  .navbar {
+    padding-top: calc(var(--space-xs) + var(--safe-top));
+  }
+  
+  .navbar.scrolled {
+    padding-top: calc(var(--space-xs) + var(--safe-top));
+  }
+  
+  /* Prevent pull-to-refresh elastic bounces */
+  html, body {
+    overscroll-behavior-y: contain;
+  }
+}
+

@@ -58,6 +58,12 @@
   --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.4);
   --shadow-green: 0 0 30px rgba(80, 200, 120, 0.25);
   --shadow-glow: 0 0 40px rgba(0, 240, 255, 0.15);
+
+  /* Safe Area Insets for Mobile Devices */
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
 }
 
 /* Light Theme Overrides */
