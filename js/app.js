@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
     themeBtn.setAttribute('aria-label', 'Toggle Light/Dark Theme');
     
     // Check local storage for theme preference
-    const savedTheme = localStorage.getItem('theme') || 'dark';
+    const savedTheme = localStorage.getItem('theme') || 'light';
     document.documentElement.setAttribute('data-theme', savedTheme);
     updateThemeIcon(savedTheme);
 
